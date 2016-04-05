@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+  <meta charset="UTF-8">	
+	<title>Restaurant Picker</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	<link rel="stylesheet" href="jquery.mobile-1.0.1.css" />
+	<link rel="stylesheet" href="custom.css" />
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.0.1.min.js"></script>
+    <script>
+$(document).bind('mobileinit',function(){
+$.mobile.changePage.defaults.changeHash = false;
+$.mobile.hashListeningEnabled = false;
+$.mobile.pushStateEnabled = false;
+});
+</script>
+</head> 
+
+<body> 
+<div data-role="page" id="home" data-theme="c">
+
+	<div data-role="content">
+	
+	<div id="branding">
+		<h1>Taste a New Wine!</h1>
+	</div>
+    
+    <div data-role="main" class="ui-content">
+    <form method="post" action="demoform.asp">
+    
+      <fieldset data-role="controlgroup">
+      <legend>Clarity</legend>
+        <label for="clear">Clear</label>
+        <input type="radio" name="clear" id="clear" value="clear" >
+        <label for="hazy">Hazy</label>
+        <input type="radio" name="hazy" id="hazy" value="hazy">	
+      </fieldset>
+
+      <fieldset data-role="controlgroup">
+      <legend>Brightness</legend>
+        <label for="bright">Bright</label>
+        <input type="radio" name="bright" id="bright" value="bright" >
+        <label for="dull">Dull (is it faulty?)</label>
+        <input type="radio" name="dull" id="dull" value="dull">	
+      </fieldset>
+
+
+      <div class="ui-field-contain">
+        <label for="info">Additional Information:</label>
+        <textarea name="addinfo" id="info" placeholder="Your notes..."></textarea>
+	</div>
+    </form>
+  </div>
+  
+  <div data-role="footer">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Appearance.html">Back</a></li>
+      <li><a href="#anylink">Reset</a></li>
+      <li><a href="#anylink">Save</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+</div><!-- /page -->
+</body>
+</html>
