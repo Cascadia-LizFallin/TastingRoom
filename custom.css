@@ -27,7 +27,7 @@ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#65464
 background: -webkit-linear-gradient(top,  #654644 0%,#331c1b 100%); /* Chrome10+,Safari5.1+ */
 background: -o-linear-gradient(top,  #654644 0%,#331c1b 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top,  #654644 0%,#331c1b 100%); /* IE10+ */
-background: linear-gradient(top,  #654644 0%,#331c1b 100%); /* W3C */
+background: -o-linear-gradient(top,  #654644 0%,#331c1b 100%); /* W3C */
 color:#fff !important;
 }
 .ui-content .choice_list  .ui-btn-active .ui-link-inherit,
